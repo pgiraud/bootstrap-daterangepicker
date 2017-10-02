@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A date range picker for Bootstrap - Exampl </title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://useiconic.com/css/iconic-glyphs.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="daterangepicker.css" />
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="moment.js"></script>
+    <script type="text/javascript" src="daterangepicker.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="margin: 60px 0">
+
+    <h1>Example for Bootstrap 4</h1>
+    <h2>FontAwesome</h2>
+
+    <input type="text" name="daterange" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
+
+    <script type="text/javascript">
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    timePicker: true,
+    timePickerIncrement: 30,
+    locale: {
+      format: 'MM/DD/YYYY h:mm A'
+    },
+    iconsCls: {
+      calendar: 'fa fa-calendar',
+      time: 'fa fa-clock-o',
+      left: 'fa fa-chevron-left',
+      right: 'fa fa-chevron-right'
+    }
+  });
+});
+    </script>
+
+    <h2>Iconic</h2>
+
+    <input type="text" name="daterange2" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
+
+    <script type="text/javascript">
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    timePicker: true,
+    timePickerIncrement: 30,
+    locale: {
+      format: 'MM/DD/YYYY h:mm A'
+    },
+    iconsCls: {
+      calendar: 'fa fa-calendar',
+      time: 'fa fa-clock-o',
+      left: 'fa fa-chevron-left',
+      right: 'fa fa-chevron-right'
+    }
+  });
+});
+    </script>
+
+  </body>
+</html>
